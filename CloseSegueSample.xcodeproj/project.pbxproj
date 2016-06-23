@@ -14,6 +14,7 @@
 		9A0F256D1D1BA0F800290666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0F256B1D1BA0F800290666 /* LaunchScreen.storyboard */; };
 		9A0F25781D1BA0F800290666 /* CloseSegueSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F25771D1BA0F800290666 /* CloseSegueSampleTests.swift */; };
 		9A0F25831D1BA0F800290666 /* CloseSegueSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F25821D1BA0F800290666 /* CloseSegueSampleUITests.swift */; };
+		9A0F25911D1BA14200290666 /* ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F25901D1BA14200290666 /* ToViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9A0F257E1D1BA0F800290666 /* CloseSegueSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloseSegueSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0F25821D1BA0F800290666 /* CloseSegueSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseSegueSampleUITests.swift; sourceTree = "<group>"; };
 		9A0F25841D1BA0F800290666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A0F25901D1BA14200290666 /* ToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				9A0F25621D1BA0F800290666 /* AppDelegate.swift */,
 				9A0F25641D1BA0F800290666 /* ViewController.swift */,
+				9A0F25901D1BA14200290666 /* ToViewController.swift */,
 				9A0F25661D1BA0F800290666 /* Main.storyboard */,
 				9A0F25691D1BA0F800290666 /* Assets.xcassets */,
 				9A0F256B1D1BA0F800290666 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0F25651D1BA0F800290666 /* ViewController.swift in Sources */,
+				9A0F25911D1BA14200290666 /* ToViewController.swift in Sources */,
 				9A0F25631D1BA0F800290666 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CloseSegueSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ikkitakahashi.CloseSegueSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -413,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CloseSegueSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ikkitakahashi.CloseSegueSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
